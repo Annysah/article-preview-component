@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background:  hsl(210, 46%, 95%);
+    max-width: 1440px;
+}
+
+.wrapper {
+    display: flex;
+    width: 620px;
+    height: 35vh;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 23%;
+    background: #fff;
+}
+
+.left-col, .right-col {
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.left-col {
+    flex-basis: 40%;
+}
+
+.left-col img {
+    width: 240px;
+    height: 35vh;
+}
+
+.right-col {
+    flex-basis: 60%;
+    margin: auto 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.text-content {
+    float: left;
+    color: #333;
+}
+
+.text-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.text-content p {
+    font-size: 13px;
+    padding-top: 8px;
+}
+
+.miche-description {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.avatar {
+    border-radius:  50%;
+    width: 50px;
+    height: 50px;
+}
+
+.miche-description h3 {
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.miche-description p {
+    position: absolute;
+    bottom: 25px;
+    right: 195px;
+    line-height: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.share-img {
+    background: hsl(210, 46%, 95%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.share-img:hover {
+    background: hsl(217, 19%, 35%);
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    top: 135px;
+    left: 365px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    visibility: hidden;
+}
+/*
+.show {
+    visibility: hidden;
+    opacity: 0;
+}*/
+
+.share::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    border: 12px solid transparent;
+    border-bottom-color: hsl(217, 19%, 35%);
+    transform: rotate(180deg);
+}
+
+.share ul li {
+    list-style: none;
+    display: inline-flex;
+}
+
+.share ul li p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 100;
+    padding-right: 10%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    opacity: .5;
+}
+
+.share ul li a {
+    text-decoration: none;
+}
+
+.share ul li a img {
+    width: 15px;
+    height: 15px;
+    padding-right: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
